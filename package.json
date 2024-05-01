@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.ts",
   "publishConfig": {
-    "registry": "https:://npm.pkg.github.com/@samueldebenedictis"
+    "registry": "https://npm.pkg.github.com/@samueldebenedictis"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
