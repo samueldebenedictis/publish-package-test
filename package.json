@@ -1,17 +1,26 @@
 {
   "name": "@samueldebenedictis/publish-package-test",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
-  "main": "hello.ts",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@samueldebenedictis"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsup --dts"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^20.12.7"
+    "@types/node": "^20.12.7",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
   }
 }
